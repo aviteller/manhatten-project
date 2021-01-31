@@ -8,12 +8,6 @@ import (
 	"time"
 )
 
-type user struct {
-	Name     string `json:"username"`
-	Email    string `json:"email"`
-	Password string `json:"password"`
-}
-
 func signup(w http.ResponseWriter, r *http.Request) {
 
 	decoder := json.NewDecoder(r.Body)
